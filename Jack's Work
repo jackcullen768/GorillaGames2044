@@ -1,0 +1,135 @@
+import java.util.scanner
+public class Tester {
+	
+
+	public static main void{
+
+	Scanner inputStat = new Scanner(System.in)
+	private Card userCard;
+	private Card comCard;
+	private int userScore = 0;
+	private int comScore = 0;
+	private boolean round = true
+
+	//Text should have appeared entering the player to the game and is displayed with a deck in
+	//front of the users screen the animation was to be a card being dealt to both user and percieved 
+	//challenger the ai
+
+	//deck is shufflued in the deck class
+	
+	for(i = 0; i < 10; i++){
+	deck.get(0);
+	//There was meant to be buttons which displayed each of the stats that the user could selectfor the round
+	System.out.println("Intelligence = " + deck.getintel(0) + "Height = " + deck.gethieght(0) + "Strength  = " + deck.getstrength(0) + "Social = " + deck.getsocial(0));
+	//User selects first
+
+	if (round == true){
+	System.out.println("Enter the stat to select I,H,S,L (L FOR SOCIAL)");
+	inputStat = scan.nextline();
+	if(inputStat = i) {
+	if(deck.getintel(0) > deck.getintel(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	}
+	}
+	elseif(inputStat = h) {
+	if(deck.getheight(0) > deck.getheight(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}
+	elseif(inputStat = s) {
+	if(deck.getstrength(0) > deck.getstrength(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}
+	elseif(inputStat = l) {
+	if(deck.getsocial(0) > deck.getsocial(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}
+	}
+	}
+	else{
+	if(deck.getintel(1) > 6){
+	if(deck.getintel(0) > deck.getintel(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}elseif(deck.gethieght(1) > 170){
+	if(deck.getheight(0) > deck.getheight(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}elseif(deck.getstrength(1) > 5){
+	if(deck.getstrength(0) > deck.getstrength(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}elseif(deck.getsocial(1) > 5){
+	if(deck.getsocial(0) > deck.getsocial(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}
+	else{
+	if(deck.getstrength(0) > deck.getstrength(1)){
+	userScore = userScore + 1; 
+	round = true;
+	else{
+	comScore = comScore + 1;
+	round = false;
+	}
+	}
+	}
+
+	deck.remove(0);
+	deck.remove(1);
+
+
+	
+
+	if(userScore > comScore){
+	System.out.println("User wins");
+	}
+	else{
+	System.out.println("Computer wins");
+	}
+	
+	}
+	}
+	}
+
+}
