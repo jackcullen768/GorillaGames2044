@@ -1,0 +1,57 @@
+
+public class Card {
+
+	private int id;
+	private String name;
+	private int intel;
+	private int hieght;
+	private int strength;
+	private int social;
+
+
+	public Card(int i, String string, int j, int k, int l, int m) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getIntel() {
+		return intel;
+	}
+	public void setIntel(int intel) {
+		this.intel = intel;
+	}
+	public int getHieght() {
+		return hieght;
+	}
+	public void setHieght(int hieght) {
+		this.hieght = hieght;
+	}
+	public int getStrength() {
+		return strength;
+	}
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+	public int getSocial() {
+		return social;
+	}
+	public void setSocial(int social) {
+		this.social = social;
+	}
+	
+	
+}
+
+
